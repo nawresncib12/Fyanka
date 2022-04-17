@@ -62,8 +62,8 @@ const SlideShow = (props) => {
         <div className={classes.root}>
           <div className={classes.phone}>
             <div className={classes.background}>
-              <img className={classes.border} src="assets/phone.png" alt="" />
-              <img className={classes.content} src="assets/phone1.png" alt="" />
+              <img className={classes.border} src="assets/phone.png" alt="phone" />
+              <img className={classes.content} src="assets/phone1.png" alt="content" />
             </div>
           </div>
           <div className={classes.description}>

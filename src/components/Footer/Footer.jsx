@@ -22,8 +22,8 @@ const Footer = () => {
       <div className={classes.download}>
         <h2>Download now for free</h2>
         <div className={classes.images}>
-          <img src="assets/google play.png" alt="" />
-          <img src="assets/appstore.png" alt="" />
+          <img src="assets/google play.png" alt="google" />
+          <img src="assets/appstore.png" alt="appstore" />
         </div>
       </div>
       <div className={classes.media}>

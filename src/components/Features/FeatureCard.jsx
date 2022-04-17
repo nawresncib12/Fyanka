@@ -20,7 +20,7 @@ const FeatureCard = () => {
   }, []);
   return (
     <div className={classes.featureCard}>
-      <img src="assets/invitation.svg" alt="" />
+      <img src="assets/invitation.svg" alt="INV" />
       <h3>Faire quelque chose</h3>
       <p>Lorem ipsum dol Lorem ipsum dolor sit ame Lorem sit ame Lorem</p>
       <div
