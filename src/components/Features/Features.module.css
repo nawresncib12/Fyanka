@@ -8,8 +8,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.featureBox:hover {}
-
 .featureContainer {
     background-size: contain;
     background-repeat: no-repeat;

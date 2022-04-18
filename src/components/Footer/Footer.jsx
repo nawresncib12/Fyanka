@@ -22,19 +22,19 @@ const Footer = () => {
       <div className={classes.download}>
         <h2>Télécharger gratuitement</h2>
         <div className={classes.images}>
-          <img src="assets/google play.png" alt="google" />
-          <img src="assets/appstore.png" alt="appstore" />
+          <img src={require("../../assets/google play.png")} alt="google" />
+          <img src={require("../../assets/appstore.png")} alt="appstore" />
         </div>
       </div>
       <div className={classes.media}>
         <div className={classes.contact}>
           <h3>Nos contacts</h3>
           <div className={classes.con}>
-            <img src="assets/email.svg" alt="email" />
+            <img src={require("../../assets/email.png")} alt="email" />
             <h5>ev.lilik@gmail.com</h5>
           </div>
           <div className={classes.con}>
-            <img src="assets/phoneIcon.png" alt="phone" />
+            <img src={require("../../assets/phoneIcon.png")} alt="phone" />
             <h5>+ 216 99 856 785</h5>
           </div>
         </div>
@@ -42,9 +42,9 @@ const Footer = () => {
           <h3>Suivez nous</h3>
 
           <div className={classes.con}>
-            <img src="assets/fb.png" alt="email" />
-            <img src="assets/insta.png" alt="email" />
-            <img src="assets/in.png" alt="email" />
+            <img src={require("../../assets/fb.png")} alt="email" />
+            <img src={require("../../assets/insta.png")} alt="email" />
+            <img src={require("../../assets/in.png")} alt="email" />
           </div>
         </div>
       </div>

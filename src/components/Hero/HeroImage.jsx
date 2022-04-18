@@ -1,10 +1,12 @@
 import classes from "./HeroImage.module.css";
 import Firework from "../../UI/Firework";
+import married from "../../assets/married.png"
+import bloba from "../../assets/bloba.png"
 const HeroImage = () => {
   return (
     <div className={classes.heroImageContainer}>
-      <img className={classes.married} src="assets/married.png" alt="blob" />
-      <img className={classes.blob} src="assets/bloba.png" alt="blob" />
+      <img className={classes.married} src={married} alt="blob" />
+      <img className={classes.blob} src={bloba} alt="blob" />
       <div style={{width:"fit-content",height:"fit-content",position:"absolute",right:"45%"}}>
         <Firework color="#EF9F99" width="50" height="40"></Firework>
       </div>

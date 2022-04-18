@@ -85,7 +85,7 @@
 }
 
 .animate {
-    animation: fadein .5s ease-in;
+    animation: fadein 1s ease-in;
 }
 
 @keyframes slideDown {

@@ -20,7 +20,7 @@ const FeatureCard = (props) => {
   }, []);
   return (
     <div className={classes.featureCard}>
-      <img src={`assets/${props.image}.png`} alt="INV" />
+      <img  src={`${require("../../assets/"+props.image+".png")}`} alt="INV" />
       <h3>{props.title}</h3>
       <p>{props.content}</p>
       <div

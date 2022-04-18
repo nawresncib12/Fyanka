@@ -4,6 +4,7 @@ import FireWork from "../../UI/Firework";
 import { useState, useRef } from "react";
 import { useEffect } from "react";
 import steps from "../../Data/steps.json";
+import phone from "../../assets/phone.png";
 const SlideShow = (props) => {
   const scroll = props.scroll;
   const setScroll = props.setScroll;
@@ -18,6 +19,8 @@ const SlideShow = (props) => {
       setSlide(slide + 1);
     }
   };
+
+
   const [isVisible, setVisible] = useState(false);
 
   const callback = (entries, observer) => {
@@ -32,7 +35,6 @@ const SlideShow = (props) => {
   const options = {};
   const myObserver = new IntersectionObserver(callback, options);
 
-
   useEffect(() => {
     if (scroll) {
       executeScroll();
@@ -42,8 +44,11 @@ const SlideShow = (props) => {
   }, [scroll, setScroll]);
 
   return (
-    <div className={`${classes.slideShow} 
-    ${isVisible ? classes.animate : ""}`} ref={slides}>
+    <div
+      className={`${classes.slideShow} 
+    ${isVisible ? classes.animate : ""}`}
+      ref={slides}
+    >
       <FireWork
         width="50px"
         height="50px"
@@ -57,7 +62,7 @@ const SlideShow = (props) => {
         style={{ position: "absolute", left: "25%", top: "50%" }}
       ></FireWork>
       <div className={classes.next} onClick={nextHandler}>
-        <img src="assets/next.png" alt="next" />
+        <img src={`${require("../../assets/next.png")}`} alt="next" />
       </div>
       <h2>Comment ça marche?</h2>
       <div className={classes.circles}>
@@ -81,34 +86,32 @@ const SlideShow = (props) => {
         <div className={classes.root}>
           <div className={classes.phone}>
             <div className={classes.background}>
-              <img
-                className={classes.border}
-                src="assets/phone.png"
-                alt="phone"
-              />
-              {slide === 1 &&  <img
+              <img className={classes.border} src={phone} alt="phone" />
+              {slide === 1 && (
+                <img
                   className={classes.content}
-                  src={`assets/${steps[0].image}.png`}
+                  src={`${require("../../assets/" + steps[0].image + ".png")}`}
                   alt="content"
-                />}
+                />
+              )}
               {slide === 2 && (
                 <img
                   className={classes.content}
-                  src={`assets/${steps[1].image}.png`}
+                  src={`${require("../../assets/" + steps[1].image + ".png")}`}
                   alt="content"
                 />
               )}
               {slide === 3 && (
                 <img
                   className={classes.content}
-                  src={`assets/${steps[2].image}.png`}
+                  src={`${require("../../assets/" + steps[2].image + ".png")}`}
                   alt="content"
                 />
               )}
               {slide === 4 && (
                 <img
                   className={classes.content}
-                  src={`assets/${steps[3].image}.png`}
+                  src={`${require("../../assets/" + steps[3].image + ".png")}`}
                   alt="content"
                 />
               )}
