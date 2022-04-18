@@ -22,7 +22,7 @@ const Features = () => {
   }, []);
   return (
     <div className={classes.features}>
-      <Title width="60%">Lorem ipsum dol Lorem ipsum dolor sit ame Lorem</Title>
+      <Title width="60%">Une révolution pour l'organisation des mariages</Title>
       <div className={classes.featureBox}>
         <div className={classes.featureContainer}>
           <FeatureCard
