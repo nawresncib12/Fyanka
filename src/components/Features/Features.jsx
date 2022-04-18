@@ -22,7 +22,7 @@ const Features = () => {
   }, []);
   return (
     <div className={classes.features}>
-      <Title width="60%">Une révolution pour l'organisation des mariages</Title>
+      <Title width="60%">Lorem ipsum dol Lorem ipsum dolor sit ame Lorem</Title>
       <div className={classes.featureBox}>
         <div className={classes.featureContainer}>
           <FeatureCard
@@ -42,7 +42,7 @@ const Features = () => {
           ></FeatureCard>
           <FeatureCard
             title="Sain d'esprit"
-            content="C’est garantir des préparatifs sereins car nous vous accompagnons de bout en bout !"
+            content="C'est garantir des préparatifs sereins car nous vous accompagnons de bout en bout !"
             image="calm"
           ></FeatureCard>
         </div>
@@ -52,8 +52,8 @@ const Features = () => {
           ref={domRef}
         >
           <p>
-            Notre offre s’adapte à vos besoins Besoin de conseils passagers
-            d’experts, ou au contraire d’un accompagnement complet pour toute la
+            Notre offre s'adapte à vos besoins Besoin de conseils passagers
+            d'experts, ou au contraire d'un accompagnement complet pour toute la
             planification? Nous vous apportons la solution qui vous correspond.
           </p>
         </div>
