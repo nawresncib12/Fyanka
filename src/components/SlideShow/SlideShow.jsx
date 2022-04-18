@@ -18,15 +18,32 @@ const SlideShow = (props) => {
       setSlide(slide + 1);
     }
   };
+  const [isVisible, setVisible] = useState(false);
+
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    });
+  };
+  const options = {};
+  const myObserver = new IntersectionObserver(callback, options);
+
 
   useEffect(() => {
     if (scroll) {
       executeScroll();
       setScroll(false);
     }
+    myObserver.observe(slides.current);
   }, [scroll, setScroll]);
+
   return (
-    <div className={classes.slideShow} ref={slides}>
+    <div className={`${classes.slideShow} 
+    ${isVisible ? classes.animate : ""}`} ref={slides}>
       <FireWork
         width="50px"
         height="50px"

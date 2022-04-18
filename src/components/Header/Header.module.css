@@ -5,6 +5,7 @@
     font-size: calc(35px + 1vmin);
     line-height: calc(30px + 1vmin);
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .header {
@@ -16,6 +17,7 @@
 .header img {
     height: calc(35px + 1vmin);
     padding-right: calc(30px + 1vmin);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

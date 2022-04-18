@@ -72,11 +72,20 @@
     top: 0;
     margin-right: 5%;
     height: 85%;
-    animation: slideDown 1s ease-in;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .animate {
-    animation: slideDown 1s ease-in;
+    animation: fadein .5s ease-in;
 }
 
 @keyframes slideDown {
@@ -92,7 +101,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    animation: slideDownTitle 1s ease-in;
+    animation: slideDownTitle 1s ease-out;
 }
 
 .slideShow .description h3 {
