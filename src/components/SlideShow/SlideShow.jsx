@@ -3,11 +3,13 @@ import Title from "../../UI/Title";
 import FireWork from "../../UI/Firework";
 import { useState, useRef } from "react";
 import { useEffect } from "react";
+import steps from "../../Data/steps.json";
 const SlideShow = (props) => {
   const scroll = props.scroll;
   const setScroll = props.setScroll;
   const slides = useRef(null);
-  const executeScroll = () => slides.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const executeScroll = () =>
+    slides.current.scrollIntoView({ behavior: "smooth", block: "center" });
   const [slide, setSlide] = useState(1);
   const nextHandler = () => {
     if (slide === 4) {
@@ -22,14 +24,14 @@ const SlideShow = (props) => {
       executeScroll();
       setScroll(false);
     }
-  }, [scroll,setScroll]);
+  }, [scroll, setScroll]);
   return (
     <div className={classes.slideShow} ref={slides}>
       <FireWork
         width="50px"
         height="50px"
         color="#EF9F99"
-        style={{ position: "absolute", left: "50%", top: "30%" }}
+        style={{ position: "absolute", left: "53%", top: "22%" }}
       ></FireWork>
       <FireWork
         width="30px"
@@ -62,14 +64,64 @@ const SlideShow = (props) => {
         <div className={classes.root}>
           <div className={classes.phone}>
             <div className={classes.background}>
-              <img className={classes.border} src="assets/phone.png" alt="phone" />
-              <img className={classes.content} src="assets/phone1.png" alt="content" />
+              <img
+                className={classes.border}
+                src="assets/phone.png"
+                alt="phone"
+              />
+              {slide === 1 &&  <img
+                  className={classes.content}
+                  src={`assets/${steps[0].image}.png`}
+                  alt="content"
+                />}
+              {slide === 2 && (
+                <img
+                  className={classes.content}
+                  src={`assets/${steps[1].image}.png`}
+                  alt="content"
+                />
+              )}
+              {slide === 3 && (
+                <img
+                  className={classes.content}
+                  src={`assets/${steps[2].image}.png`}
+                  alt="content"
+                />
+              )}
+              {slide === 4 && (
+                <img
+                  className={classes.content}
+                  src={`assets/${steps[3].image}.png`}
+                  alt="content"
+                />
+              )}
             </div>
           </div>
-          <div className={classes.description}>
-            <h3>Créer un compte</h3>
-            <p>Vous devez créer un compte pour pouvoir </p>
-          </div>
+
+          {slide === 1 && (
+            <div className={classes.description}>
+              <h3>{steps[0].title}</h3>
+              <p>{steps[0].content} </p>
+            </div>
+          )}
+          {slide === 2 && (
+            <div className={classes.description}>
+              <h3>{steps[1].title}</h3>
+              <p>{steps[1].content} </p>
+            </div>
+          )}
+          {slide === 3 && (
+            <div className={classes.description}>
+              <h3>{steps[2].title}</h3>
+              <p>{steps[2].content} </p>
+            </div>
+          )}
+          {slide === 4 && (
+            <div className={classes.description}>
+              <h3>{steps[3].title}</h3>
+              <p>{steps[3].content} </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

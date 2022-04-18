@@ -12,15 +12,15 @@ const Footer = () => {
               paddingRight: "calc(15px + 1vmin)",
             }}
           ></Firework>
-          <h6>Fyanka</h6>
+          <h6>FYANKA</h6>
         </div>
         <p>
-          Lorem ipsum dol Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame or
-          sit ame
+          Planifiez votre mariage en 10 minutes et vivez-le immédiatement, sans
+          imprévus.
         </p>
       </div>
       <div className={classes.download}>
-        <h2>Download now for free</h2>
+        <h2>Télécharger gratuitement</h2>
         <div className={classes.images}>
           <img src="assets/google play.png" alt="google" />
           <img src="assets/appstore.png" alt="appstore" />
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className={classes.media}>
         <div className={classes.contact}>
-          <h3>Our contact</h3>
+          <h3>Nos contacts</h3>
           <div className={classes.con}>
             <img src="assets/email.svg" alt="email" />
             <h5>ev.lilik@gmail.com</h5>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={classes.social}>
-          <h3>Follow us</h3>
+          <h3>Suivez nous</h3>
 
           <div className={classes.con}>
             <img src="assets/fb.png" alt="email" />

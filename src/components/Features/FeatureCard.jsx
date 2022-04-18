@@ -1,6 +1,6 @@
 import classes from "./FeatureCard.module.css";
 import { useState, useEffect, useRef } from "react";
-const FeatureCard = () => {
+const FeatureCard = (props) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
 
@@ -20,9 +20,9 @@ const FeatureCard = () => {
   }, []);
   return (
     <div className={classes.featureCard}>
-      <img src="assets/invitation.svg" alt="INV" />
-      <h3>Faire quelque chose</h3>
-      <p>Lorem ipsum dol Lorem ipsum dolor sit ame Lorem sit ame Lorem</p>
+      <img src={`assets/${props.image}.png`} alt="INV" />
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
       <div
         className={`${classes.flap1} 
                   ${isVisible ? classes.animate : ""}`}

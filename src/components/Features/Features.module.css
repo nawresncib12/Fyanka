@@ -11,10 +11,6 @@
 .featureBox:hover {}
 
 .featureContainer {
-    margin: 0 5%;
-    padding-top: 5%;
-    background-image: url(../../../public/assets/blob.png);
-    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     display: grid;
@@ -23,7 +19,7 @@
 }
 
 .featureDescription {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
