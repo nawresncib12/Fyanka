@@ -1,17 +1,11 @@
 import classes from "./Footer.module.css";
-import Firework from "../../UI/Firework";
+import logo from "../../assets/logoWhite.png"
 const Footer = () => {
   return (
     <div className={classes.footer}>
       <div className={classes.description}>
         <div className={classes.company}>
-          <Firework
-            color="white"
-            height=" calc(20px + 1vmin);"
-            style={{
-              paddingRight: "calc(15px + 1vmin)",
-            }}
-          ></Firework>
+        <img className={classes.logo} src={logo} alt="logo" />
           <h6>FYANKA</h6>
         </div>
         <p>

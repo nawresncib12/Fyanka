@@ -6,6 +6,10 @@
     color: white;
 }
 
+.footer .logo {
+    height: calc(20px + 1vmin);
+}
+
 .footer .description {
     width: 80%;
 }

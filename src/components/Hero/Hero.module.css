@@ -1,7 +1,7 @@
 .heroContainer {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    min-height: calc( 100vh - 70px);
+    min-height: calc( 100vh - 100px);
     padding: 0px 100px;
     overflow: hidden;
 }
