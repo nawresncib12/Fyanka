@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Fyanka/static/css/main.3b278727.css",
+    "main.js": "/Fyanka/static/js/main.74c844fe.js",
+    "static/media/calm.png": "/Fyanka/static/media/calm.12e05e99ccd0e50f3fde.png",
+    "static/media/bloba.png": "/Fyanka/static/media/bloba.49edd563ec8f8097571e.png",
+    "static/media/married.png": "/Fyanka/static/media/married.b1fa067ec9df373d9217.png",
+    "static/media/quality.png": "/Fyanka/static/media/quality.6e1f1857adfbea779e09.png",
+    "static/media/confirm.png": "/Fyanka/static/media/confirm.c3307ea170f52ee5221c.png",
+    "static/media/choose.png": "/Fyanka/static/media/choose.440403b64800144e1896.png",
+    "static/media/transperency.png": "/Fyanka/static/media/transperency.5ccdbfce00c0bd51f9ae.png",
+    "static/media/blob.png": "/Fyanka/static/media/blob.8c23420c5ad9a3dec3d7.png",
+    "index.html": "/Fyanka/index.html",
+    "main.3b278727.css.map": "/Fyanka/static/css/main.3b278727.css.map",
+    "main.74c844fe.js.map": "/Fyanka/static/js/main.74c844fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b278727.css",
+    "static/js/main.74c844fe.js"
+  ]
+}
